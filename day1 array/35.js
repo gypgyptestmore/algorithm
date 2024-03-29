@@ -11,11 +11,12 @@ var searchInsert = function (nums, target) {
     while (low <= high) {
         let mid = Math.floor((high + low) / 2)
         if (nums[mid] > n) {
-            high = nums[mid]
+            high = mid-1
         } else if (nums[mid] < n) {
-            low = nums[mid]
+            low = mid+1
         } else if (nums[mid] == n) {
             return mid
         }
     }
+    return low
 };
