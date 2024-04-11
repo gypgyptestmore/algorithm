@@ -4,7 +4,7 @@ var buildTree = function(inorder, postorder) {
     //标记根节点位置
     let postIndex = postorder.length - 1
     const build = (inStart,inEnd)=>{
-        if(inStart >inEnd) return null
+        if(inStart > inEnd) return null
         // 后序中找到根节点，创建根节点，中序中找到
         let rootVal = postorder(postIndex)
         let root = new TreeNode(rootVal)
