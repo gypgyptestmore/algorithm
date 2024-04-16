@@ -2,7 +2,6 @@
 // 没有思路,555
 // 贪心算法：
 
-加油站站点
 var canCompleteCircuit = function(gas, cost) {
     let n = gas.length  //n个加油站
     let  curTank = 0    //当前剩余油量
