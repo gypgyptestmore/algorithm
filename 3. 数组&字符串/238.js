@@ -1,4 +1,4 @@
-// 出自身以外数组的乘积
+// 除自身以外数组的乘积
 var productExceptSelf = function(nums) {
     let  n = nums.length
     let answer = new Array(n).fill(1) 
