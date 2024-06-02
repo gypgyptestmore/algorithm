@@ -8,7 +8,7 @@ var spiralOrder = function (matrix) {
     bottom = matrix.length - 1;
   let result = [];
   while (left <= right && top <= bottom) {
-    // 最上侧从左至右
+    // 最上侧从左至右 
     for (let col = left; col <= right; col++) {
       result.push(matrix[top][col]);
     }
