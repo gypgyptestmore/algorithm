@@ -1,8 +1,7 @@
-// 移除几个区间可以有无重叠区间
+// 移除几个区间可以没有重叠区间
 var eraseOverlapIntervals = function(intervals) {
     if(intervals.length===0) return 0
     let count = 0
-    let merge = []
     intervals.sort((a,b)=>a[1]-b[1])//拿老二时间排序
     let prevEnd = intervals[0][1]
     for(let i = 1;i<intervals.length;i++){
