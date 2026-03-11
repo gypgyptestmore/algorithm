@@ -9,7 +9,8 @@ var findMinArrowShots = function (points) {
     if (num < points[i][0]) {
       cont++;
       num = points[i][1];
-    } else {
+    } else {  
+      
       num = Math.min(num, points[i][1]);
     }
   }
